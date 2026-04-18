@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Jobby App
 
 Jobby App is a job searching web application built using React.js. It allows users to log in, explore job listings, apply filters, and view detailed job information. This project focuses on building a real-world frontend application using React concepts.
@@ -155,3 +156,7 @@ Matta Sri Ammayya
 mattasriammayya@gmail.com
 
 ---
+=======
+# msriammayya-job-search
+Jobby App is a React.js-based job search application that allows users to browse jobs, apply filters, and view detailed job information. The project focuses on frontend development using React, with APIs used only for data fetching.
+>>>>>>> 5dac5e8d5ac00c15a0222400b53bc7af330841ff
