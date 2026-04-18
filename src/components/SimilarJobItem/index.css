@@ -1,0 +1,48 @@
+.similar-card {
+  background-color: #1e293b;
+  padding: 15px;
+  border-radius: 10px;
+  width: 280px;
+  color: #e2e8f0;
+  list-style: none;
+}
+
+.similar-top {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.similar-logo {
+  width: 45px;
+}
+
+.similar-title {
+  color: #f8fafc;
+  font-size: 15px;
+}
+
+.similar-rating {
+  color: #facc15;
+  font-size: 13px;
+}
+
+.similar-desc-title {
+  margin-top: 10px;
+  color: #f1f5f9;
+  font-size: 14px;
+}
+
+.similar-description {
+  color: #cbd5f5;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.similar-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: #cbd5f5;
+  font-size: 13px;
+}
