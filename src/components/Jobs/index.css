@@ -74,6 +74,8 @@ body {
   background: #1e293b;
   border: 1px solid #334155;
   overflow: hidden;
+ 
+
 }
 
 .search-box input {
@@ -162,5 +164,6 @@ body {
 
   .left-section label {
     font-size: 14px;
+
   }
 }
