@@ -8,17 +8,17 @@ const JobItem = props => {
   return (
     <Link to={`/jobs/${jobData.id}`} className="link-item">
       <li className="job-card">
-        <div className="top">
+        <div className="job-top">
           <img src={jobData.companyLogoUrl} alt="company logo" />
           <div>
-            <h3>{jobData.title}</h3>
+            <h3 className="job-title">{jobData.title}</h3>
             <p className="job-rating">
               <FaStar /> {jobData.rating}
             </p>
           </div>
         </div>
 
-        <div className="middle">
+        <div className="job-middle">
           <p>
             <FaMapMarkerAlt /> {jobData.location}
           </p>
@@ -30,10 +30,10 @@ const JobItem = props => {
           </p>
         </div>
 
-        <hr />
+        <hr className="divider" />
 
-        <h4>Description</h4>
-        <p>{jobData.jobDescription}</p>
+        <h4 className="job-desc-title">Description</h4>
+        <p className="job-description">{jobData.jobDescription}</p>
       </li>
     </Link>
   )
