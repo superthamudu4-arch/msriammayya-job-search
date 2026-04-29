@@ -1,89 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #020617;
+  color: #e2e8f0;
+}
+
 .jobs-container {
   display: flex;
+  flex-direction: column;
   min-height: 100vh;
   background: linear-gradient(135deg, #0f172a, #020617);
-  color: #e2e8f0;
-  padding: 20px 30px;
-  gap: 25px;
-  font-family: 'Inter', sans-serif;
+  padding: 15px;
+  gap: 20px;
 }
 
 .left-section {
-  width: 25%;
+  width: 100%;
   background: #1e293b;
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .left-section h3 {
-  font-size: 15px;
+  font-size: 14px;
   margin-bottom: 12px;
   color: #f8fafc;
-  letter-spacing: 0.5px;
 }
 
 .left-section ul {
   list-style: none;
-  padding: 0;
 }
 
 .left-section li {
   display: flex;
   align-items: center;
-  margin-bottom: 12px;
-  transition: 0.3s;
-}
-
-.left-section li:hover {
-  transform: translateX(4px);
+  margin-bottom: 10px;
 }
 
 .left-section input {
   margin-right: 10px;
-  accent-color: #6366f1; 
+  accent-color: #6366f1;
   cursor: pointer;
 }
 
 .left-section label {
+  font-size: 13px;
   color: #cbd5f5;
-  font-size: 14px;
   cursor: pointer;
 }
 
 .left-section hr {
   border: 1px solid #334155;
-  margin: 18px 0;
+  margin: 15px 0;
 }
 
 .right-section {
-  width: 75%;
+  width: 100%;
 }
 
 .search-box {
   display: flex;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   border-radius: 10px;
   background: #1e293b;
   border: 1px solid #334155;
   overflow: hidden;
-  transition: 0.3s;
-}
-
-.search-box:focus-within {
-  border-color: #6366f1;
-  box-shadow: 0 0 8px #6366f155;
 }
 
 .search-box input {
   flex: 1;
-  padding: 12px;
+  padding: 10px;
   background: transparent;
   border: none;
-  color: #f1f5f9;
   outline: none;
-  font-size: 14px;
+  color: #f1f5f9;
+  font-size: 13px;
 }
 
 .search-box input::placeholder {
@@ -93,10 +93,10 @@
 .search-box button {
   background: #6366f1;
   border: none;
-  padding: 10px 16px;
+  padding: 8px 12px;
   cursor: pointer;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   transition: 0.3s;
 }
 
@@ -106,18 +106,61 @@
 
 .jobs-list {
   list-style: none;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .loader {
   display: flex;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .failure,
 .no-jobs {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 40px;
   color: #94a3b8;
+}
+
+@media (min-width: 768px) {
+  .jobs-container {
+    flex-direction: row;
+    padding: 20px;
+  }
+
+  .left-section {
+    width: 30%;
+  }
+
+  .right-section {
+    width: 70%;
+  }
+
+  .search-box input {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .jobs-container {
+    padding: 25px 40px;
+  }
+
+  .left-section {
+    width: 25%;
+  }
+
+  .right-section {
+    width: 75%;
+  }
+
+  .left-section h3 {
+    font-size: 15px;
+  }
+
+  .left-section label {
+    font-size: 14px;
+  }
 }
